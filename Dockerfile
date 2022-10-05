@@ -1,4 +1,4 @@
-FROM maven:3.3-jdk-8 AS builder
+FROM "maven:3.3-jdk-8" AS builder
 COPY . /usr/src/mymaven/
 WORKDIR /usr/src/mymaven/
 RUN mvn clean install
